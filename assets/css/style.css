@@ -1,15 +1,21 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Lato,sans-serif ;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+.showcase .logo {
+    font-family: Oswald,sans-serif;
+    font-size: 50px;
+}
+
+.showcase .menu {
+    
 }
 
 .video-container {
@@ -17,14 +23,17 @@ body {
     position: fixed;
     height: 100%;
     width: 100%;
-    top: 0;
+    top: 50px;
     left: 0;
+    z-index: 10;
     
 }
 
 .video-container #hvideo {
+   /* padding: 10px 0 0 0;*/
     height: 100%;
     width: 100%;
+    
 
 }
 
