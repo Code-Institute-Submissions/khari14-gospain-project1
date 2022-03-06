@@ -127,3 +127,12 @@ nav #menu {
     height:250px;
 
 }
+
+.slider {
+    display: flex;
+    margin-left: 75px;
+}
+
+.slider-info {
+    display: flex
+}
