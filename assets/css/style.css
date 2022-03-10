@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300&family=Oswald:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 
 * {
     margin: 0;
@@ -37,12 +39,15 @@ nav {
     padding: 10px 90px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
    
 }
 
 .showcase {
     height: 100vh;
     display: flex;
+    display:inline-block;
+    text-align: center;
 }
 
 
@@ -86,53 +91,188 @@ nav #menu {
     border-bottom: 1px solid #3a3a3a;
 }
 
-.main-video-text3 {
-    font-size: 130%;
-    font-family: 'Great Vibes',sans-serif;
-    border-radius: 500px;
+#main-video-text1 {
+    font-size: 300%;
+    font-family: 'Oswald',sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
     letter-spacing: 4px;
-    width: 400px;
+   
+    width: 300px;
     height: 300px;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-left: 10px;
     background-color: rgba(255,255,255,1);
     bottom: 30px;
-    right: 650px;
+    left: 50px;
     position: absolute;
-    background: url('../images/courtyard.jpg') no-repeat center center;
-    opacity: 0.7;
+    background: url('../images/malaga-home.jpg') no-repeat center center;
+    
+    opacity: 0.8;
 }
 
-.main-video-text4 {
-    font-size: 130%;
-    font-family: 'Great Vibes',sans-serif;
-    border-radius: 500px;
+#main-video-text1 a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+
+
+#main-video-text2 {
+    font-size: 300%;
+    font-family: 'Oswald',sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
     letter-spacing: 4px;
-    width: 400px;
+    width: 300px;
     height: 300px;
-    padding-top: 40px;
+    padding-top: 50px;
+    padding-left: 10px;
+    left: 450px;
+    background-color: rgba(255,255,255,1);
+    bottom: 30px;
+    
+    position: absolute;
+    background: url('../images/mallorca-home.jpg') no-repeat center center;
+    opacity: 0.8;
+}
+
+#main-video-text2 a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+
+#main-video-text3 {
+    font-size: 300%;
+    font-family: 'Oswald',sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    letter-spacing: 4px;
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
     padding-left: 10px;
     background-color: rgba(255,255,255,1);
     bottom: 30px;
-    right: 150px;
+
+    right: 450px;
     position: absolute;
-    background: url('../images/courtyard.jpg') no-repeat center center;
-    opacity: 0.7;
+    background: url('../images/barcelona.jpg') no-repeat center center;
+    opacity: 0.8;
+}
+
+#main-video-text3 a {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+#main-video-text4 {
+    font-size: 300%;
+    color: rgb(255, 255, 255);
+    font-family:'Oswald' ,sans-serif;
+    border-radius: 20px;
+    letter-spacing: 4px;
+    
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
+    padding-left: 10px;
+    background-color: rgba(255,255,255,1);
+    bottom: 30px;
+    right: 50px;
+    
+    position: absolute;
+    background: url('../images/spain-madrid-gebouw.jpg') no-repeat center center;
+    opacity: 0.8;
+}
+
+#main-video-text4 a {
+    text-decoration: none;
+    color:aliceblue;
 }
 
 .info-body{
-    top:525px;
+
     background-color: #ffff;
     width: 100%;
-    height:250px;
+    height:120px;
 
 }
 
 .slider {
-    display: flex;
-    margin-left: 75px;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-items: baseline;
+    
 }
 
 .slider-info {
-    display: flex
+    margin: 0 75px 0 75px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.desc-body {
+    background-color: white;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.homepara {
+    width: 50%;
+    background-color: rgba(255,255, 255, 1);
+    align-items: center; 
+    justify-content: center;
+    
+}
+
+.homepara h2 {
+    text-align: right;
+    
+}
+
+.homepara p {
+    text-align: right;
+    
+}
+
+.trip-image img{
+    margin-left:50px ;
+    height: 250px;
+    width:50%;
+    border-radius: 150px;
+    
+}
+
+
+
+.footer-items{
+    text-align: center;
+    background-color: rgba(10, 1, 1, 0.7);
+    
+}
+
+.footer-items > li{
+    display: inline;
+}
+
+.footer-items i {
+    font-size: 180%;
+    margin: 2%;
+    padding: 3%;
+    columns: #3a3a3a;
+    color: white;
+}
+
+#contactform a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
 }
