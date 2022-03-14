@@ -38,16 +38,23 @@ nav {
     height: 100px;
     padding: 10px 90px;
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
    
 }
 
 .showcase {
     height: 100vh;
     display: flex;
+    
     display:inline-block;
     text-align: center;
+}
+
+.showcase div {
+    box-sizing: border-box;
+    float: left;
+   
 }
 
 
@@ -64,12 +71,12 @@ nav #menu {
 .showcase .logo {
     position: fixed;
     padding: 22px 20px;
-    margin-left: 50px;
+    margin-left: 200px;
     font-family: 'Great Vibes', sans-serif;
     float: left;
     font-weight: bold;
     font-size: 50px;
-    z-index: 2;
+    z-index: 10;
     color: rgb(255, 255, 255);
     
 }
@@ -89,6 +96,24 @@ nav #menu {
 /*Have to change hovering techique*/
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+}
+
+#video-text{
+    font-size: 30px;
+    color: white;
+    bottom: 600px;
+    padding-left: 100px;
+    position: absolute;
+    
+
+}
+
+#video-text h1 {
+    text-align: left;
+}
+
+#video-text em {
+    font-size: 70%;
 }
 
 #main-video-text1 {
@@ -202,7 +227,7 @@ nav #menu {
 
 .slider {
     display: inline-flex;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 50px;
     justify-items: baseline;
     
@@ -219,34 +244,37 @@ nav #menu {
 
 .desc-body {
     background-color: white;
-    height: 250px;
+    height: 350px;
+    
     display: flex;
     align-items: center;
-}
-
-.homepara {
-    width: 50%;
-    background-color: rgba(255,255, 255, 1);
-    align-items: center; 
-    justify-content: center;
+    text-align: center;
     
 }
 
-.homepara h2 {
-    text-align: right;
+.homepara {
+    width: 70%;
+    background-color: rgba(255,255, 255, 1);
+    
+    clear:both;
+    
     
 }
 
 .homepara p {
-    text-align: right;
-    
+    width:90%;
+    text-align: left;
+    margin-left: 100px;
 }
 
-.trip-image img{
+
+
+.desc-body .trip-image img{
+    width:50%;
     margin-left:50px ;
     height: 250px;
-    width:50%;
-    border-radius: 150px;
+    
+    border-radius: 50px;
     
 }
 
@@ -254,7 +282,7 @@ nav #menu {
 
 .footer-items{
     text-align: center;
-    background-color: rgba(10, 1, 1, 0.7);
+    background-color: rgba(3, 3, 3, 0.7);
     
 }
 
@@ -276,3 +304,240 @@ nav #menu {
     text-transform: uppercase;
     
 }
+
+/*Media Queries for Main Page*/
+
+@media screen and (max-width:1200px) {
+    .showcase {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .showcase > div {
+        clear: both;
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0 ;
+    }
+
+
+    #main-video-text1 {
+        
+        float:left;
+        padding:0;
+    }
+
+    #main-video-text2 {
+        
+        float:left;
+        padding:0;
+    }
+
+    #main-video-text3 {
+      
+        float:left;
+        padding:0;
+    }
+
+    #main-video-text4 {
+      
+        float:left;
+        padding:0;
+    }
+
+}
+
+
+/*Destiantions CSS*/
+
+#navdest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 2;
+   
+}
+
+.destination {
+    height: 600px;
+    width:100%;
+    display: flex;
+    
+    display:inline-block;
+    
+}
+
+.destination .logo {
+    position: fixed;
+    padding: 22px 20px;
+    margin-left: 200px;
+    font-family: 'Great Vibes', sans-serif;
+    float: left;
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 10;
+    color: white;
+    
+}
+
+.malaga-text{
+    
+    height:600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 200px 0 200px; 
+    display: block;
+    align-items: center;
+    justify-content: center;
+  
+    padding-top: 120px;
+}
+
+.malaga-text > h2,h3,p {
+    text-align: left;
+}
+
+.malaga-text .delrey-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width:1000px;
+}
+
+.malaga-text > ul {
+    margin: 20px ; 
+
+}
+figcaption {
+text-align: center;
+}
+
+.malaga-text .mallorca-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    width:1000px;
+}
+
+
+/*Contact Us*/
+
+
+
+
+.contact .logo {
+    position: fixed;
+    padding: 22px 20px;
+    margin-left: 200px;
+    font-family: 'Great Vibes', sans-serif;
+    float: left;
+    font-weight: bold;
+    font-size: 50px;
+    z-index: 100;
+    color: white;
+}
+
+
+.contact-clean {
+    background: url('../images/playa-cu.jpg') no-repeat center center;
+    background-size:cover;
+    padding:150px 0;
+  }
+  
+  @media (max-width:767px) {
+    .contact-clean {
+      padding:20px 0;
+    }
+  }
+  
+  .contact-clean form {
+    padding:40px;
+    border-radius:4px;
+    color:#505e6c;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+    max-width:480px;
+    width:90%;
+    margin:0 auto;
+    background-color: rgb(1, 17, 1);
+   
+  }
+  
+  @media (max-width:767px) {
+    .contact-clean form {
+      padding:30px;
+    }
+  }
+  
+  .contact-clean h2 {
+    margin-top:5px;
+    font-weight:bold;
+    font-size:28px;
+    margin-bottom:36px;
+    color:white;
+  }
+  
+  .contact-clean .form-group:last-child {
+    margin-bottom:5px;
+  }
+  
+  .contact-clean form .form-control {
+    background:#fff;
+    border-radius:2px;
+    box-shadow:1px 1px 1px rgba(0,0,0,0.5);
+    outline:none;
+    color:inherit;
+    padding-left:12px;
+    height:42px;
+  }
+  
+  .contact-clean form .form-control:focus {
+    border:1px solid #b2b2b2;
+  }
+  
+  .contact-clean form textarea.form-control {
+    min-height:100px;
+    max-height:260px;
+    padding-top:10px;
+    resize:vertical;
+  }
+  
+  .contact-clean form .btn {
+    padding:16px 32px;
+    border:none;
+    background:none;
+    box-shadow:none;
+    text-shadow:none;
+    opacity:0.9;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:0.4px;
+    line-height:1;
+    outline:none !important;
+  }
+  
+  .contact-clean form .btn:hover {
+    opacity:1;
+  }
+  
+  .contact-clean form .btn:active {
+    transform:translateY(1px);
+  }
+  
+  .contact-clean form .btn-primary {
+    background-color:#055ada !important;
+    margin-top:15px;
+    color:#fff;
+  }
+  
+  
+
