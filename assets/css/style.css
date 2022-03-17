@@ -44,11 +44,11 @@ nav {
 }
 
 .showcase {
-    height: 100vh;
-    width: 100%;
-    display: flex;
     
-    display:inline-block;
+    width: 100%;
+   display: inline-block;
+    
+   
     text-align: center;
 }
 
@@ -226,26 +226,29 @@ nav #menu {
 }
 
 .info-body{
-
+    display: flex;
     background-color: #ffff;
+    flex-wrap:wrap;
     width: 100%;
-    height:120px;
+   
+    padding-top: 20px;
+    align-items: center;
+    justify-items: center;
 
 }
 
 .slider {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     width:100%;
-    margin-top: 40px;
-    margin-left: 50px;
-    justify-items: baseline;
-    
+    text-align: center;
+ 
 }
 
 .slider-info {
     
-    margin: 0 75px 0 75px;
-    padding: 0;
+    margin: 0 80px 0 80px;
+    
     text-align: center;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.4);
@@ -254,8 +257,9 @@ nav #menu {
 
 .desc-body {
     background-color: white;
-    height: 350px;
-    
+   
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -288,6 +292,9 @@ nav #menu {
     
 }
 
+.map-wrap{
+    
+}
 
 
 .footer-items{
