@@ -13,17 +13,13 @@
 
 .video-container {
     overflow: hidden;
-<<<<<<< HEAD
-    position: relative;
-=======
     position: absolute;
->>>>>>> c9978c8 (Tablet and Desktop set)
     height: 100vh;
     
     top: 0;
     left: 0;
-<<<<<<< HEAD
-  
+    z-index: -1;
+    width: 100%;
 
 }
 
@@ -33,15 +29,6 @@
     position: absolute;
     top: 15%;
     left:5%;
-=======
-   z-index: -1;
-   width: 100%;
-
-}
-
-video {
-    width: 100%;
->>>>>>> c9978c8 (Tablet and Desktop set)
 }
 
 .video-container #hvideo {
@@ -134,7 +121,7 @@ nav #menu {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 400px;
 
 }
 
@@ -369,13 +356,7 @@ nav #menu {
     .showcase > div {
         clear: both;
         width: 100%;
-<<<<<<< HEAD
         
-      
-=======
-        clear: both;
-
->>>>>>> c9978c8 (Tablet and Desktop set)
         padding: 0 ;
     }
 
