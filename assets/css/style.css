@@ -13,11 +13,16 @@
 
 .video-container {
     overflow: hidden;
+<<<<<<< HEAD
     position: relative;
+=======
+    position: absolute;
+>>>>>>> c9978c8 (Tablet and Desktop set)
     height: 100vh;
-    width: 100%;
+    
     top: 0;
     left: 0;
+<<<<<<< HEAD
   
 
 }
@@ -28,6 +33,15 @@
     position: absolute;
     top: 15%;
     left:5%;
+=======
+   z-index: -1;
+   width: 100%;
+
+}
+
+video {
+    width: 100%;
+>>>>>>> c9978c8 (Tablet and Desktop set)
 }
 
 .video-container #hvideo {
@@ -120,7 +134,7 @@ nav #menu {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 100px;
 
 }
 
@@ -321,6 +335,30 @@ nav #menu {
 
 /*Media Queries for Main Page*/
 
+@media screen and (min-width: 1400px) {
+	video {
+		width: 100%;
+		height: auto;
+	}
+
+    .malaga-text .delrey-center {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+	video {
+		width: auto;
+		height: 100%;
+    }
+
+    .malaga-text .delrey-center {
+        width: 100%;
+    }
+}
+
+
+
 @media screen and (max-width:1200px) {
     .showcase {
         width: 100%;
@@ -331,8 +369,13 @@ nav #menu {
     .showcase > div {
         clear: both;
         width: 100%;
+<<<<<<< HEAD
         
       
+=======
+        clear: both;
+
+>>>>>>> c9978c8 (Tablet and Desktop set)
         padding: 0 ;
     }
 
@@ -359,6 +402,10 @@ nav #menu {
       
         float:left;
         padding:0;
+    }
+
+    .malaga-text .delrey-center {
+        width: 100%;
     }
 
 }
@@ -373,10 +420,10 @@ nav #menu {
     }
 
     .showcase > div {
-        clear: both;
+    
         width: 100%;
         clear: both;
-        height: 150px;
+     
         padding: 0 ;
     }
 
@@ -403,6 +450,10 @@ nav #menu {
       
         float:left;
         padding:0;
+    }
+
+    .malaga-text .delrey-center {
+        width: 100%;
     }
 
 }
@@ -457,7 +508,11 @@ nav #menu {
     padding-top: 120px;
 }
 
-.malaga-text > h2,h3,p {
+.malaga-text > p {
+    padding-bottom: 10px;
+}
+
+.malaga-text > h2,h3{
     text-align: left;
 }
 
