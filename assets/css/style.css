@@ -328,9 +328,7 @@ nav #menu {
 		height: auto;
 	}
 
-    .malaga-text .delrey-center {
-        width: 100%;
-    }
+
 }
 
 @media screen and (max-width: 1399px) {
@@ -339,9 +337,7 @@ nav #menu {
 		height: 100%;
     }
 
-    .malaga-text .delrey-center {
-        width: 100%;
-    }
+ 
 }
 
 
@@ -385,10 +381,7 @@ nav #menu {
         padding:0;
     }
 
-    .malaga-text .delrey-center {
-        width: 100%;
-    }
-
+   
 }
 
 
@@ -433,9 +426,6 @@ nav #menu {
         padding:0;
     }
 
-    .malaga-text .delrey-center {
-        width: 100%;
-    }
 
 }
 
@@ -479,8 +469,7 @@ nav #menu {
 .malaga-text{
     
     height:600px;
-    margin-left: auto;
-    margin-right: auto;
+ 
     margin: 0 200px 0 200px; 
     display: block;
     align-items: center;
@@ -502,7 +491,7 @@ nav #menu {
     margin-left: auto;
     margin-right: auto;
     height: 500px;
-    width:1000px;
+    width: 100%;
 }
 
 .malaga-text > ul {
@@ -518,7 +507,7 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
     height: 800px;
-    width:1000px;
+    width:100%;
 }
 
 
